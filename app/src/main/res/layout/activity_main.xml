@@ -6,16 +6,78 @@
     android:layout_height="match_parent"
     tools:context="com.yiheyu.qiedai.view.activity.MainActivity">
 
-    <TextView
-        android:text="登陆"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        android:id="@+id/textView" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/bottom_layout">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/home_selector"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/text_color_selector"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_throw_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/throw_order_selector"
+            android:gravity="center"
+            android:text="甩单"
+            android:textColor="@color/text_color_selector"
+            android:textSize="13sp" />
 
 
+        <TextView
+            android:id="@+id/tv_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/activity_selector"
+            android:gravity="center"
+            android:text="活动"
+            android:textColor="@color/text_color_selector"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_my"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/user_selector"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="@color/text_color_selector"
+            android:textSize="13sp" />
+    </LinearLayout>
 
 
 </RelativeLayout>
